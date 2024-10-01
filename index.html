@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Piano Tiles</title>
+    <link rel="stylesheet" href="src/css/style.css">
+    <link rel="stylesheet" href="src/css/game.css">
+    <link rel="stylesheet" href="src/css/landing.css">
+</head>
+<body>
+    <div class="body">
+        <div class="landing">
+            <div class="head">
+                <span class="game_name text">
+                    Taptiles
+                </span>
+                <span class="text">by <u><a class="text" target="_blank" href="https://github.com/Jaagrav/tap-tiles">Jaagrav</a></u></span>
+            </div>
+            <img src="src/assets/logo.png" class="game_logo"/>
+            <img src="src/assets/playbtn.png" class="game_playbtn"/>
+            <div class="game_high_score_holder">
+                <span class="game_high_score text">High Score: </span>
+                <span class="game_high_score_value text">0</span>
+            </div>
+        </div>
+        <div class="game">
+            <div class="score text">0</div>
+            <div class="game-tiles">
+                <div class="game-tiles-container">
+                    <div class="tiles-container1"></div>
+                    <div class="tiles-container2"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.0/gsap.min.js" integrity="sha512-2fk3Q4NXPYAqIha0glLZ2nluueK43aNoxvijPf53+DgL7UW9mkN+uXc1aEmnZdkkZVvtJZltpRt+JqTWc3TS3Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="src/js/generateAndMoveTiles.js"></script>
+    <script src="src/js/music.js"></script>
+    <script src="src/js/app.js"></script>
+</body>
+</html>

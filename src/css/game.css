@@ -1,0 +1,55 @@
+.game-tiles, .game {
+    height: 100%;
+    width: 100%;
+}
+
+.game-tiles-container {
+    height: 100%;
+    width: 100%;
+}
+
+.tiles-container1, .tiles-container2 {
+    position: absolute;
+    top: 0;left: 0;
+    margin: auto;
+    overflow: hidden;
+    height: fit-content;
+    width: 100%;
+}
+
+.tile-row {
+    height: calc(100vh - 75vh);
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.tile {
+    height: 100%;
+    width: 100%;
+    transition: .3s;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.tile:active, .tile:hover {
+    background: rgba(0, 0, 0, 0.306);
+}
+
+.tile.pressable {
+    background: #000;
+}
+
+.tile.pressable:active, .tile.pressable:hover {
+    background: rgb(79, 79, 79);
+    border: 8px solid rgb(34, 34, 34);
+}
+
+.score {
+    position: absolute;
+    height: fit-content;
+    width: fit-content;
+    top: 18px;left: 0;right: 0;
+    margin: auto;
+    font-size: 48px;
+    z-index: 9999;
+}

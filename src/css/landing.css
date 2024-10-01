@@ -1,0 +1,43 @@
+.landing {
+    position: absolute;
+    margin: auto;
+    top: 0;right: 0;left: 0;bottom: 0;
+
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+
+    margin-bottom: 44px;
+}
+
+.head {
+    display: grid;
+    grid-template-rows: repeat(2, auto );
+    text-align: center;
+}
+
+.game_name {
+    text-align: center;
+    font-size: 3rem;
+}
+
+.game_logo {
+    width: 75%;
+}
+
+.game_playbtn {
+    cursor: pointer;
+    height: 50px;
+    width: 50px;
+    transition: .3s;
+}
+
+.game_playbtn:hover {
+    transform: scale(1.4);
+}
+
+.game_playbtn:active {
+    transform: scale(0.6);
+}
