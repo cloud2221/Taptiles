@@ -1,10 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
+    <!-- Character encoding for the HTML document -->
     <meta charset="UTF-8">
+    <!-- Compatibility mode for Internet Explorer -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Viewport settings for mobile devices -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Title of the page, displayed in the browser's title bar and bookmarks -->
     <title>Plates</title>
     <!-- Stylesheets -->
     <link rel="stylesheet" href="src/css/style.css">
@@ -13,15 +16,22 @@
 </head>
 
 <body>
+
     <div class="body">
         <!-- Landing Section -->
+        <!-- This section contains the game's logo, title, and play button -->
         <section class="landing">
             <header class="head">
+                <!-- Game title -->
                 <h1 class="game_name text">Taptiles</h1>
+                <!-- Byline with link to GitHub profile -->
                 <p class="text">by <u><a class="text" target="_blank" href="https://github.com/cloud2221/plates">Sander</a></u></p>
             </header>
+            <!-- Game logo -->
             <img src="src/assets/logo.png" alt="Game Logo" class="game_logo" />
+            <!-- Play button -->
             <img src="src/assets/playbtn.png" alt="Play Button" class="game_playbtn" />
+            <!-- High score display -->
             <div class="game_high_score_holder">
                 <span class="game_high_score text">High Score: </span>
                 <span class="game_high_score_value text">0</span>
@@ -29,11 +39,17 @@
         </section>
 
         <!-- Game Section -->
+        <!-- This section contains the game's tiles and score display -->
         <section class="game">
+            <!-- Score display -->
             <div class="score text">0</div>
+            <!-- Game tiles container -->
             <div class="game-tiles">
+                <!-- Container for the two tile rows -->
                 <div class="game-tiles-container">
+                    <!-- First tile row -->
                     <div class="tiles-container1"></div>
+                    <!-- Second tile row -->
                     <div class="tiles-container2"></div>
                 </div>
             </div>
@@ -41,9 +57,13 @@
     </div>
 
     <!-- Scripts -->
+    <!-- Greensock Animation Platform (GSAP) library -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.0/gsap.min.js" integrity="sha512-2fk3Q4NXPYAqIha0glLZ2nluueK43aNoxvijPf53+DgL7UW9mkN+uXc1aEmnZdkkZVvtJZltpRt+JqTWc3TS3Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- Game logic script -->
     <script src="src/js/generateAndMoveTiles.js"></script>
+    <!-- Music script -->
     <script src="src/js/music.js"></script>
+    <!-- App script -->
     <script src="src/js/app.js"></script>
 </body>
 
